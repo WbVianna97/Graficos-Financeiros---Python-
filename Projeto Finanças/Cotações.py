@@ -74,7 +74,8 @@ dados = dados.loc[intervalo_data[0]:intervalo_data[1]]
 st.line_chart(dados)
 
 #calculo de performance
-texto_perfomance_ativos = ""
+
+texto_performance_ativos = ""
 
 if len(lista_acoes)==0:
     lista_acoes = list(dados.columns)
@@ -119,4 +120,5 @@ Essa foi a performance de cada ativo no período selecionado:
          
 {texto_performance_carteira}         
          """)  #markdown
+
 
